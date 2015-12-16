@@ -33,6 +33,8 @@ Drupal 8 implements changes that are necessary to modernize itself so that it ma
 
 To explore Drupal 8, we use the [Examples](https://www.drupal.org/project/examples) project, both for sample code snippets in this class and to prepare you for future exploration of the various module development capabilities in Drupal. Be sure to follow the setup instructions for this lesson and clone the Git repo for the Drupal 8 version of the module to a location that isn't in the Drupal path — this avoids any chance of the code conflicting with the lab work that you'll be engaging in. Work and examples in this class primarily draw upon the Examples project's module `page_example`.
 
+<!-- @task, "text" : "Clone the Git repo for the Drupal 8 version of the module to a location that isn't in the Drupal path." -->
+
 <!-- @section -->
 
 ## Symfony
@@ -62,6 +64,8 @@ You can read some helpful information about [PSR-4 autoloading in Drupal 8](http
 
 > **Note**
 Drupal 8 does not use the Model-View-Controller software architectural pattern. Drupal 8 only implements Controllers from that programming model.
+
+<!-- @task, "text" : "Learn the basics of PSR-4 autoloading by reading the linked documentation page." -->
 
 ### Why use Symfony?
 
@@ -154,6 +158,8 @@ White spaces in YAML files have value/meaning; therefore, proper indentation mus
 You can check out this [Drupal 8 documentation page](https://drupal.org/node/2000204) on drupal.org for additional `key|value` pairs that can be used in a module's `*.info.yml` file and the related change records.
 
 Now, navigate to the **Extend** page in your Drupal website, find the Page Example module, and enable it. Creating a `.module` file is not required prior to enabling the new module using the Drupal UI (extend) or `drush pm-enable`. We expect the final `*.module` file to be smaller as much of the functional code is distributed to service classes, controllers and plugins created with other files in an OOP architecture.
+
+<!-- @task, "text" : "Create your first module as described above. Understand that this module does nothing at all yet, but can already be enabled." -->
 
 ### Creating routing.yml
 
