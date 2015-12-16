@@ -105,7 +105,7 @@ First, we'll create a single block to contain the form:
 
 [view raw](https://gist.github.com/acquialibrary/a81b0d11478b78f177ac/raw/0383d8f543b0d3a666b9f4a9581d99d2e2191f1d/ExampleConfigurableTextBlock.php) [ExampleConfigurableTextBlock.php](https://gist.github.com/acquialibrary/a81b0d11478b78f177ac#file-exampleconfigurabletextblock-php) hosted with ❤ by [GitHub](https://github.com)
 
-*   Rebuild the Drupal cache to display the block, using the following command:
+3.Rebuild the Drupal cache to display the block, using the following command:
 
   `drush cr`
 
@@ -230,9 +230,8 @@ In the code example above everything should resemble building a form in Drupal 7
     $form = \Drupal::formBuilder()->getForm('Drupal\demo\Form\DemoForm');
     ```
 
-    IMPORTANT
+> **IMPORTANT**
+Block Plugins are what you will be using in custom and contributed modules. Block Plugins should _never_be dependent on or change Block Entities.
 
-    Block Plugins are what you will be using in custom and contributed modules. Block Plugins should _never_be dependent on or change Block Entities.
 
-
-    You can then `$form`, which will be the renderable array of the form.
+You can then `$form`, which will be the renderable array of the form.
