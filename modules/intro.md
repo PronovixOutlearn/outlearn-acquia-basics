@@ -15,7 +15,7 @@
 
 # Building modules with Drupal 8
 
-Let's see what skills you'll need to get started with this learning path! 
+Let's see what you'll need to get started with this learning path! 
 
 If you're just getting started with PHP and object-oriented programming (OOP), Code Academy has a starter class at [http://www.codecademy.com/en/tracks/php](http://www.codecademy.com/en/tracks/php).
 
